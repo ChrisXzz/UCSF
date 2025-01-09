@@ -7,26 +7,34 @@ This repo contains python code for converting dicom files to nii.gz files.
 
 #### 0.2. Verify Installation
 
-1. 
+1. Open a new terminal (or Anaconda Prompt for Windows).
+2. Check the installation by typing:
 
-After finishing installation, please open terminal
 ```bash
-wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
-bash Anaconda3-2024.06-1-Linux-x86_64.sh -b -p ./anaconda3
-./anaconda3/bin/conda init
-source ~/.bashrc
+conda --version
 ```
+You should see the version number of Anaconda.
 
+#### 0.3. Create a new environment (optional but highly recommended)
+
+1. Create a new environment
 
 ```bash
-conda create -n dicom python=3.9 -y
+conda create -n dicom python=3.9
+```
+Replace dicom with your desired environment name.
+
+2. Activate the environment:
+
+```bash
 conda activate dicom
 ```
+#### 0.4. Install required packages
 
-### 1. Install packages
-
+install with pip:
 ```bash
-pip install 
+pip install pydicom
+pip install dicom2nifti
 ```
 
 ### 2. Set the path where dicom files are stored
