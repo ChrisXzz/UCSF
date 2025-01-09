@@ -37,20 +37,29 @@ pip install pydicom
 pip install dicom2nifti
 ```
 
-### 2. Set the path where dicom files are stored
+### 1. Set the path where dicom files are stored
 
 ```bash
-
+base_dicom_dir=/path/to/your/dicom_files/folder
+# Please modify this to actual path, e.g.,
 ```
 
-### 3. Set the path to store the converted nifti files
+### 2. Set the path to store the converted nifti files
 
 ```bash
-
+base_output_dir=/path/to/store/nifti_files/folder
+# Please modify this to actual path, e.g.,
 ```
 
-### 4. Set the temp empty path 
+### 3. Set the temp empty path 
 
 ```bash
+temp_dir=/path/to/temp_empty/folder
+# Please modify this to actual path, e.g.,
+```
 
+### 4. Start converting
+
+```bash
+python dicom_to_nii.py --base_dicom_dir $base_dicom_dir --base_output_dir $base_output_dir --temp_dir $temp_dir
 ```
