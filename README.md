@@ -1,11 +1,22 @@
-# UCSF
-This repo contains python code for converting dicom files to nii.gz files. Please folllow the step-by-step procedure.
+# Convert dicom files to nii.gz files
+This repo contains python code for converting dicom files to nii.gz files.
 
-### 0. Create a virtual environment
+### 0. Installation Anaconda and create a virtual environment 
+
+#### 0.1. Please intall Anaconda firstly. Please follow the instruction [here](https://www.anaconda.com/download/success).
+
+After finishing installation, please open terminal
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
+bash Anaconda3-2024.06-1-Linux-x86_64.sh -b -p ./anaconda3
+./anaconda3/bin/conda init
+source ~/.bashrc
+```
+
 
 ```bash
-conda create -n nn python=3.9 -y
-conda activate nn
+conda create -n dicom python=3.9 -y
+conda activate dicom
 ```
 
 ### 1. Install packages
