@@ -3,7 +3,11 @@ This repo contains python code for converting dicom files to nii.gz files.
 
 ### 0. Installation Anaconda and create a virtual environment 
 
-#### 0.1. Please intall Anaconda firstly. Please follow the instruction [here](https://www.anaconda.com/download/success).
+#### 0.1. Please intall Anaconda firstly, you can find Installers [here](https://www.anaconda.com/download/success). 
+
+#### 0.2. Verify Installation
+
+1. 
 
 After finishing installation, please open terminal
 ```bash
