@@ -63,3 +63,5 @@ temp_dir=/path/to/temp_empty/folder
 ```bash
 python dicom_to_nii.py --base_dicom_dir $base_dicom_dir --base_output_dir $base_output_dir --temp_dir $temp_dir
 ```
+
+# Bodymap Encoding
