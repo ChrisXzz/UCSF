@@ -66,7 +66,7 @@ python dicom_to_nii.py --base_dicom_dir $base_dicom_dir --base_output_dir $base_
 
 # Bodymap Encoding
 ## Please change the example path in the following used codes to your actual path
-For example, "E:\\ucsf_post_5k\\out_new\\"
+For example, "E:\\ucsf_post_5k\\out_new\\" stores the nifti file converted in the previous steps; "E:\\ucsf_post_5k\\error\\" stores CT with HU value issues; "E:\\ucsf_post_5k\\upload\\" would be used to store data organized into bodymap format.
 
 ### 1. Check if the minimum HU value of the converted ct nifti file is greater than -100 (to determine if the ct is a positive one or not)
 
