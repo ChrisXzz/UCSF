@@ -87,7 +87,7 @@ python UCSF_style_reorganized.py
 python contrast_norm.py
 ```
 
-### 4. Adjust all CT directions to RPS and fix CT with itk snap unreadable issue
+### 4. Adjust all CT directions to RPS and fix CT with ITK-Snap unreadable issue
 
 ```bash
 python normalize.py
