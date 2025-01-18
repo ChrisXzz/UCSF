@@ -66,7 +66,7 @@ python dicom_to_nii.py --base_dicom_dir $base_dicom_dir --base_output_dir $base_
 
 # Bodymap Encoding
 
-### 1. Check if the minimum HU value of the converted nifti file is greater than -100 (to determine if the ct is a positive one or not)
+### 1. Check if the minimum HU value of the converted ct nifti file is greater than -100 (to determine if the ct is a positive one or not)
 
 ```bash
 python check_HU.py
