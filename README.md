@@ -65,3 +65,34 @@ python dicom_to_nii.py --base_dicom_dir $base_dicom_dir --base_output_dir $base_
 ```
 
 # Bodymap Encoding
+
+### 1. Check if the minimum HU value of the converted nifti file is greater than -100 (to determine if the ct is a positive one or not)
+
+```bash
+python check_HU.py
+```
+
+
+### 2. We filter all the CT scans for each case, retaining only the one with the highest number of slices and converting the filtered CT scans for each case into bodymap format
+
+```bash
+python UCSF_style_reorganized.py
+```
+
+### 3. Adjust the HU values of all CT files to -1000 to 1000
+
+```bash
+python contrast_norm.py
+```
+
+### 4. Adjust all CT directions to RPS and fix CT with itk snap unreadable issue
+
+```bash
+python normalize.py
+```
+
+### 5. Ensure that the format of each CT file is int16 and the format of the mask file is uint8
+
+```bash
+python check_image_type.py
+```
