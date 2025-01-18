@@ -96,3 +96,6 @@ python normalize.py
 ```bash
 python check_image_type.py
 ```
+
+
+
